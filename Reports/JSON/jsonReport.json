@@ -1,0 +1,353 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-07T14:11:06.071Z",
+        "line": 3,
+        "name": "Validate that google search is working",
+        "description": "",
+        "id": "feature-to-test-google-search-funcionality;validate-that-google-search-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6365000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "browser is open",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2204000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on google search page",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.user_is_on_google_search_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2172000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters a text in search box",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.user_enters_a_text_in_search_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1547000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "hits enter",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.hits_enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 583000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is navegated to search results",
+            "match": {
+              "location": "StepDefinitions.GoogleSearchSteps.user_is_navegated_to_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test google search funcionality",
+    "description": "",
+    "id": "feature-to-test-google-search-funcionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/GoogleSearch.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-07T14:11:19.077Z",
+        "line": 13,
+        "name": "check if login is sucessful with valid credencials",
+        "description": "",
+        "id": "test-login-functionality;check-if-login-is-sucessful-with-valid-credencials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7012000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the browser is open",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.the_browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1681000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1180000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters marcelo and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "marcelo",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.LoginPOM.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on login button",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2484000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navegated to the homepage",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.user_is_navegated_to_the_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-07T14:11:31.529Z",
+        "line": 14,
+        "name": "check if login is sucessful with valid credencials",
+        "description": "",
+        "id": "test-login-functionality;check-if-login-is-sucessful-with-valid-credencials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4391000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the browser is open",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.the_browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 827000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1185000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters uliana and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "uliana",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 23
+                }
+              ],
+              "location": "StepDefinitions.LoginPOM.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on login button",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1019000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navegated to the homepage",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.user_is_navegated_to_the_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-07T14:11:39.028Z",
+        "line": 15,
+        "name": "check if login is sucessful with valid credencials",
+        "description": "",
+        "id": "test-login-functionality;check-if-login-is-sucessful-with-valid-credencials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4391000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the browser is open",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.the_browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 788000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1196000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters matteus and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "matteus",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 24
+                }
+              ],
+              "location": "StepDefinitions.LoginPOM.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on login button",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1091000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navegated to the homepage",
+            "match": {
+              "location": "StepDefinitions.LoginPOM.user_is_navegated_to_the_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "test login functionality",
+    "description": "",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Login.feature",
+    "tags": []
+  }
+]
