@@ -15,8 +15,8 @@ stage("Checkout Self"){
 }
 
 stage('Cucumber Tests'){
-    withMaven(maven: 'maven35'){
-       sh """
+    withMaven(maven: 'maven_3_5_0'){
+       
       cd ${env.WORKSPACE_LOCAL}
       mvn clear test
 }
@@ -28,12 +28,12 @@ stage('Export report'){
 }
 
 
-stage (Import results to Xray) {
+stage('Import results to Xray') {
 
 def description = "[BUILD_URL|${env.BUILD_URL}]"
-def labels = '["label1","label2"]'
+def labels = '["automation","test"]'
 def environment = "QA"
-def testExecutionFieldId = NUMBER
+def testExecutionFieldId = 4656268
 def testEnvironmentFieldName = "customfield_NUMBER"
 def projectKey = "KEY"
 def xrayConnectorId = 'ID'
@@ -58,14 +58,7 @@ def info = '''{
 
 echo info
 
-step([$class: 'XrayImportBuilder', endpointName: '/cucumber/multipart', importFilePath: 'Reports\\JSON', importInParallel: 'false', importInfo: '''description 
-labels 
-
-testExecutionFieldId 
-testEnvironmentFieldName 
-projectKey 
-xrayConnectorId 
-''', inputInfoSwitcher: 'fileContent', serverInstance: 'SERVER-68edb6d7-c5f6-43c2-9e3a-656aac56b587'])
+step([$class: 'XrayImportBuilder', endpointName: '/cucumber/multipart', importFilePath: 'Reports\\JSON', importInParallel: 'false', inputInfoSwitcher: 'fileContent', serverInstance: 'SERVER-68edb6d7-c5f6-43c2-9e3a-656aac56b587'])
 
 
 }
