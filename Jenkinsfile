@@ -22,7 +22,10 @@ stage('Cucumber Tests'){
 }
 }
 
-
+stage('Export report'){
+    archive "**/jsonReport.json"
+    cucumber '**/jsonReport.json'
+}
 
 
 stage('Import results to Xray') {
