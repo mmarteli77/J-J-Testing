@@ -15,7 +15,7 @@ stage("Checkout Self"){
 }
 
 stage('Cucumber Tests'){
-    withMaven(maven: 'maven_3_5_0'){
+    withMaven(maven: 'maven3'){
        
       cd ${env.WORKSPACE_LOCAL}
       mvn clear test
