@@ -45,6 +45,11 @@
         <version>3.8.1</version>
        </dependency>
 		
+
+	</dependencies>
+
+	
+</project>
 	<build>
     <plugins>
         <plugin>
@@ -57,9 +62,3 @@
         </plugin>
     </plugins>
 </build>
-
-
-	</dependencies>
-
-	
-</project>
