@@ -21,7 +21,7 @@ public class GoogleSearchSteps {
 	public void browser_is_open()  {
 		System.out.println("inside the step browser is open");
 		System.setProperty("webdriver.chrome.driver","C:/eclipse/Marcelo_Workspace/CucumberJava/src/test/resources/Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
 	}
