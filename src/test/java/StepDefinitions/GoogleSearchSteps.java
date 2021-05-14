@@ -20,7 +20,7 @@ public class GoogleSearchSteps {
 	@Given("browser is open")
 	public void browser_is_open()  {
 		System.out.println("inside the step browser is open");
-		System.setProperty("webdriver.chrome.driver","https://github.com/mmarteli77/J-J-Testing/tree/master_automation/src/test/resources/Drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","src/test/resources/Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
